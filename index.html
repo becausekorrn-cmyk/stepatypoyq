@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090807">
+<title>THE LEGACY — Личный бренд</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090807;--gold:#d7b77b;--cream:#f3eadb;--muted:#a79b89;--line:rgba(215,183,123,.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+.ambient{position:fixed;width:55vw;height:55vw;left:-18vw;top:-24vw;border-radius:50%;background:#9c6b2d;filter:blur(170px);opacity:.13;pointer-events:none}
+nav{height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 7vw;border-bottom:1px solid rgba(255,255,255,.07);position:relative;z-index:2}
+.brand{font-size:12px;letter-spacing:.34em;color:var(--gold);font-weight:700}.navright{display:flex;gap:32px;align-items:center;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#bdb2a1}.sound{border:1px solid var(--line);padding:11px 15px;border-radius:99px;background:transparent;color:var(--gold);font:inherit;cursor:pointer;letter-spacing:.13em}
+.hero{min-height:calc(100vh - 88px);padding:7vh 7vw 9vh;display:grid;grid-template-columns:1.03fr .97fr;gap:5vw;align-items:center;position:relative}
+.eyebrow{color:var(--gold);font-size:10px;letter-spacing:.34em;text-transform:uppercase;display:flex;align-items:center;gap:13px}.eyebrow:before{content:"";width:35px;height:1px;background:var(--gold)}
+h1{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(62px,8.2vw,126px);line-height:.91;letter-spacing:-.055em;margin:30px 0 26px;max-width:720px}
+h1 em{font-weight:500;color:var(--gold)}.intro{font-size:15px;line-height:1.9;color:#b9ad9b;max-width:440px}
+.cta{display:inline-flex;align-items:center;gap:22px;margin-top:38px;text-decoration:none;color:#17120b;background:linear-gradient(115deg,#e8d3a5,#b88e4e);padding:17px 22px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;transition:.3s}.cta:hover{transform:translateY(-4px);box-shadow:0 14px 45px #b88e4e30}.cta span{font-size:18px}
+.visual{height:min(70vh,700px);min-height:440px;position:relative;display:flex;align-items:center;justify-content:center}
+.frame{position:absolute;inset:2% 8% 2% 8%;border:1px solid rgba(215,183,123,.4);padding:12px}
+.frame:before,.frame:after{content:"";position:absolute;width:55px;height:55px;border-color:var(--gold);border-style:solid;opacity:.8}.frame:before{top:-5px;left:-5px;border-width:1px 0 0 1px}.frame:after{right:-5px;bottom:-5px;border-width:0 1px 1px 0}
+.photo{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.76) contrast(1.06);background:linear-gradient(145deg,#30261b,#0e0c09)}
+.photo-wrap{position:absolute;inset:12px;overflow:hidden;background:#15110c}.photo-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(5,4,3,.65))}
+.photo-caption{position:absolute;z-index:1;bottom:35px;left:35px}.photo-caption small{font-size:9px;letter-spacing:.28em;color:var(--gold)}.photo-caption div{font-family:"Playfair Display";font-size:28px;margin-top:8px}
+.stamp{position:absolute;right:1%;top:8%;width:112px;height:112px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:9px;letter-spacing:.18em;text-align:center;transform:rotate(12deg);background:#0b0907b8}
+.scroll{position:absolute;bottom:28px;left:7vw;color:#827665;font-size:9px;letter-spacing:.25em;text-transform:uppercase;display:flex;gap:14px;align-items:center}.scroll:before{content:"";height:1px;width:40px;background:var(--gold)}
+section.details{padding:110px 12vw 120px;border-top:1px solid rgba(255,255,255,.07);background:linear-gradient(180deg,#0d0b08,#100d09)}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:60px}.section-head h2{font:500 clamp(38px,5vw,68px)/1.05 "Playfair Display";margin:18px 0 0;max-width:600px}.section-head p{color:var(--muted);font-size:13px;line-height:1.8;max-width:280px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:32px 24px 34px 0}.stat+.stat{border-left:1px solid var(--line);padding-left:30px}.number{font:500 clamp(38px,5vw,62px) "Playfair Display";color:var(--gold)}.stat p{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#9f9382;margin:10px 0 0}
+.manifesto{padding:115px 10vw;text-align:center;position:relative}.manifesto .quote{font:500 clamp(32px,5vw,66px)/1.2 "Playfair Display";max-width:1000px;margin:28px auto;color:#e8ddca}.manifesto .quote em{color:var(--gold)}.manifesto small{color:var(--gold);letter-spacing:.3em;font-size:9px}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:28px 7vw;display:flex;justify-content:space-between;color:#786e60;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+#gate{position:fixed;inset:0;z-index:10;background:rgba(5,4,3,.92);backdrop-filter:blur(16px);display:grid;place-items:center;transition:opacity .7s,visibility .7s}#gate.hidden{opacity:0;visibility:hidden;pointer-events:none}.gate-inner{text-align:center;padding:30px}.gate-inner .brand{font-size:11px}.gate-inner h2{font:500 clamp(40px,7vw,76px) "Playfair Display";margin:22px 0 12px}.gate-inner p{color:#a99d8c;font-size:12px;letter-spacing:.08em;margin-bottom:30px}.enter{cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold);padding:17px 27px;letter-spacing:.22em;font-size:10px;text-transform:uppercase;transition:.3s}.enter:hover{background:var(--gold);color:#100d09}
+@media(max-width:800px){nav{height:70px;padding:0 6vw}.navright>a{display:none}.hero{grid-template-columns:1fr;padding:70px 7vw 85px;gap:45px}.visual{height:570px;min-height:0}.frame{inset:0 5%}.stamp{right:0;top:-3%;width:90px;height:90px}.scroll{display:none}.section-head{display:block}.section-head p{margin-top:25px}.stats{grid-template-columns:1fr}.stat,.stat+.stat{border-left:0;border-bottom:1px solid var(--line);padding:25px 0}.stat:last-child{border-bottom:0}.manifesto{padding:90px 8vw}footer{gap:15px;flex-wrap:wrap}}
+@media(max-width:430px){.visual{height:460px}.photo-caption{left:23px;bottom:25px}.photo-caption div{font-size:23px}.navright{gap:12px}.sound{padding:9px 11px;font-size:9px}h1{font-size:64px}}
+</style>
+</head>
+<body>
+<div class="ambient"></div>
+<div id="gate"><div class="gate-inner"><div class="brand">THE LEGACY / PERSONAL EDITION</div><h2>Твоя история.<br><em style="color:var(--gold)">Твои правила.</em></h2><p>Нажми, чтобы войти и включить атмосферу</p><button class="enter" id="enter">Войти в мой мир&nbsp; ↗</button></div></div>
+<nav><div class="brand">THE LEGACY</div><div class="navright"><a>PERSONAL BRAND</a><a>EST. BY AMBITION</a><button class="sound" id="sound">♫ &nbsp; SOUND ON</button></div></nav>
+<main>
+<section class="hero">
+<div class="copy"><div class="eyebrow">A different state of mind</div><h1>Не мечтаю.<br><em>Создаю.</em></h1><p class="intro">Успех — это не случайность и не громкие слова. Это характер, дисциплина и привычка каждый день становиться сильнее вчерашнего.</p><a class="cta" href="#story">Моя философия <span>↗</span></a></div>
+<div class="visual"><div class="frame"><div class="photo-wrap"><img class="photo" src="rich.png" alt="Портрет в эстетике роскоши"><div class="photo-caption"><small>THE PERSON BEHIND THE VISION</small><div>Made for more.</div></div></div></div><div class="stamp">NO LIMITS<br>— 2026 —<br>NO EXCUSES</div></div>
+<div class="scroll">SCROLL TO DISCOVER</div>
+</section>
+<section class="details" id="story"><div class="section-head"><div><div class="eyebrow">The mindset</div><h2>Роскошь — это<br>свобода выбирать.</h2></div><p>Не доказывать. Не сравнивать. Не ждать идеального момента. Просто строить жизнь, которая действительно нравится.</p></div>
+<div class="stats"><div class="stat"><div class="number">01</div><p>Думать масштабно</p></div><div class="stat"><div class="number">02</div><p>Действовать уверенно</p></div><div class="stat"><div class="number">∞</div><p>Не ставить границ</p></div></div></section>
+<section class="manifesto"><small>PERSONAL MANIFESTO</small><div class="quote">«Я не пытаюсь выглядеть успешным.<br>Я строю жизнь, которой <em>горжусь.</em>»</div></section>
+</main>
+<footer><span>THE LEGACY © 2026</span><span>BUILT DIFFERENT. BUILT WITH INTENTION.</span></footer>
+<audio id="music" src="gnaw alex g.m4a" loop preload="auto"></audio>
+<script>
+const audio=document.getElementById('music'), gate=document.getElementById('gate'), enter=document.getElementById('enter'), sound=document.getElementById('sound');
+let playing=false;
+async function startMusic(){try{await audio.play();playing=true;sound.innerHTML='♫ &nbsp; SOUND ON';}catch(e){playing=false;sound.innerHTML='♫ &nbsp; TAP FOR SOUND';}}
+enter.addEventListener('click',async()=>{gate.classList.add('hidden');await startMusic();});
+sound.addEventListener('click',async()=>{if(playing){audio.pause();playing=false;sound.innerHTML='♫ &nbsp; SOUND OFF';}else await startMusic();});
+</script>
+</body>
+</html>
